@@ -13,10 +13,6 @@ public class CarBehaviour : MonoBehaviour
     [Tooltip("A boolean value determining whether or not the car can rotate when not moving.")]
     [SerializeField] private bool onlyTurnWhileMoving = true;
 
-    // remove before recording
-    public bool forceCar = true;
-
-
     private float speed, turnInput, moveInput;
 
     public float turnAmount
@@ -44,12 +40,7 @@ public class CarBehaviour : MonoBehaviour
 
         // Apply rotationg and translation.
         transform.Rotate(Vector3.up * turnAmount * Time.deltaTime, Space.World);            
-        if (!forceCar) transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
+        transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
 
-    }
-
-    void FixedUpdate()
-    {
-        if (forceCar) GetComponent<Rigidbody>().AddForce(transform.forward * maxSpeed * moveInput * Time.fixedDeltaTime, ForceMode.Acceleration);
     }
 }
