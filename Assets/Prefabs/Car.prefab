@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5371079365489525304}
   - component: {fileID: 6948809270121062050}
+  - component: {fileID: 5383856356653465556}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -53,6 +54,19 @@ MonoBehaviour:
   deceleration: 10
   turnRate: 180
   onlyTurnWhileMoving: 1
+--- !u!65 &5383856356653465556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47131758021763703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6568244, y: 0.82614684, z: 1.4778043}
+  m_Center: {x: 0.00046011806, y: 0.12811786, z: -0.0062446}
 --- !u!1 &2228334532204906403
 GameObject:
   m_ObjectHideFlags: 0
