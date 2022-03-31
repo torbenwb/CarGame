@@ -20,8 +20,6 @@ public class CarBehaviour : MonoBehaviour
         get { return turnInput * turnRate; }
     }
 
-
-
     // Update is called once per frame
     void Update()
     {
