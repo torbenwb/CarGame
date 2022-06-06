@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4119627864897903138}
   m_Layer: 0
-  m_Name: Smoke
+  m_Name: Exhaust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -691,7 +691,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 5.885604
+    angle: 5
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -1021,8 +1021,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.16570824
-          value: 0.6952138
+          time: 0.1780526
+          value: 0.7567525
           inSlope: 0.99999994
           outSlope: 0.99999994
           tangentMode: 0
@@ -1524,7 +1524,7 @@ ParticleSystem:
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 1

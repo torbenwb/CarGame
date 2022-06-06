@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class CurveScaler : MonoBehaviour
 {
-    [SerializeField] private Curve linkedCurve;
-
-    private Vector3 initialScale;
+    [SerializeField] protected Curve linkedCurve;
+    [SerializeField] protected float curveScale = 1.0f;
 
     private void Start(){
-        initialScale = transform.localScale;
-
+        OnStart();
+        
         if (linkedCurve){
             linkedCurve.OnCurveUpdate += CurveUpdateCallback;
         }
@@ -22,7 +21,12 @@ public class CurveScaler : MonoBehaviour
         }
     }
 
-    public void CurveUpdateCallback(){
-        transform.localScale = initialScale * linkedCurve.Value;
+    public virtual void OnStart(){
+
+    }
+
+    public virtual void CurveUpdateCallback(){
+        //transform.localScale = initialScale * linkedCurve.Value;
+        //print("Curve update callback");
     }
 }

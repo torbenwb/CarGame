@@ -23,14 +23,14 @@ public class Curve : ScriptableObject
     public void PlayCurve(){
         curveTime = 0.0f;
         curveEndTime = curve[curve.length - 1].time;
-        
+        CurvePlayer.PlayCurve(this);
     }
 
-    IEnumerator Play(){
-        while(curveTime < curveEndTime){
-            curveTime += updateRate;
-            OnCurveUpdate?.Invoke();
-            yield return new WaitForSeconds(updateRate);
-        }
+    public bool UpdateCurve(float update){
+        MonoBehaviour.print("Update curve");
+        curveTime += update;
+        OnCurveUpdate?.Invoke();
+
+        return curveTime < curveEndTime;
     }
 }
