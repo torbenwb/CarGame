@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 5371079365489525304}
   - component: {fileID: 6948809270121062050}
   - component: {fileID: 5383856356653465556}
+  - component: {fileID: 4369979686311002281}
   m_Layer: 0
-  m_Name: Car
+  m_Name: Car 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,6 +68,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6568244, y: 0.82614684, z: 1.4778043}
   m_Center: {x: 0.00046011806, y: 0.12811786, z: -0.0062446}
+--- !u!95 &4369979686311002281
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47131758021763703}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a21f8212bd8f4264a9e97ffa297a9887, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2228334532204906403
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2228334532204906403}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29, y: -0.145, z: -0.475}
+  m_LocalPosition: {x: -0.3, y: -0.12, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5371079365489525304}
@@ -174,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2471183379674573967}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.302, y: -0.13, z: 0.487}
+  m_LocalPosition: {x: -0.3, y: -0.12, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5371079365489525304}
@@ -254,13 +274,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2518473372738931541}
-  m_LocalRotation: {x: -0, y: -0.99841255, z: -0, w: -0.05632538}
-  m_LocalPosition: {x: 0.294, y: -0.136, z: -0.478}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.3, y: -0.12, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5371079365489525304}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -186.458, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!33 &6189497941576204959
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -372,7 +392,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -4785750358229586990, guid: 822c9c719ac779b479ceae3eccecddc1, type: 3}
-  - {fileID: 2100000, guid: b6e343afb5f6a0243a2a4900dd31f2b8, type: 2}
+  - {fileID: 2100000, guid: 99ec4b315eacbbd47b8c2da191dd0ceb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -433,13 +453,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8069945605167558822}
-  m_LocalRotation: {x: -0, y: -0.9993064, z: -0, w: 0.03723924}
-  m_LocalPosition: {x: 0.309, y: -0.12, z: 0.47}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.3, y: -0.12, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5371079365489525304}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -175.732, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!33 &1028837874222966677
 MeshFilter:
   m_ObjectHideFlags: 0

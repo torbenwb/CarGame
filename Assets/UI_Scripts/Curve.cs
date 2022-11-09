@@ -27,7 +27,6 @@ public class Curve : ScriptableObject
     }
 
     public bool UpdateCurve(float update){
-        MonoBehaviour.print("Update curve");
         curveTime += update;
         OnCurveUpdate?.Invoke();
 

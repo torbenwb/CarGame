@@ -46,6 +46,7 @@ public class Score : MonoBehaviour
 
     void Update()
     {
+        
         totalTime += Time.deltaTime;
         minTimePerStar -= minTimeDegradation * Time.deltaTime;
         minTimePerStar = Mathf.Clamp(minTimePerStar, 0.5f, maxTimePerStar);
@@ -70,6 +71,7 @@ public class Score : MonoBehaviour
             
 
             if (timer < 0.0f){
+                if (!GameManager.instance) return;
                 GameManager.instance.Invoke("LoadStart", 1.0f);
             }
         }

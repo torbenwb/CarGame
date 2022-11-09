@@ -6,17 +6,20 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public ScreenWipe screenWipe;
 
     public int sceneIndex = 0;
-    public SceneTransition sceneTransition;
+
     public static int highScore = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        screenWipe = GetComponentInChildren<ScreenWipe>();
         if (!instance)
         {
             instance = this;
+            screenWipe.OnFinishScreenWipe+=LoadSceneIndex;
             DontDestroyOnLoad(this);
             
         } 
@@ -31,16 +34,21 @@ public class GameManager : MonoBehaviour
             if (sceneIndex == 0)
             {
                 sceneIndex++;
-                sceneTransition.StartTransition(sceneIndex);
+                //sceneTransition.StartTransition(sceneIndex);
                 //SceneManager.LoadScene(sceneIndex);
+                screenWipe.NextScene(1);
             }
             
         }
     }
 
+    public void LoadSceneIndex(int sceneIndex){
+        SceneManager.LoadScene(sceneIndex);
+    }
+
     public void LoadStart()
     {
         sceneIndex = 0;
-        sceneTransition.StartTransition(sceneIndex);
+        screenWipe.NextScene(0);
     }
 }
